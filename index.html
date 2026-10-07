@@ -134,6 +134,27 @@ footer img{width:20px;height:20px;vertical-align:middle;margin-right:10px;filter
 .t1{left:0;top:0;background-position:0 0}.t2{right:0;top:0;background-position:100% 0}
 .t3{left:0;bottom:0;background-position:0 100%}.t4{right:0;bottom:0;background-position:100% 100%}
 @media (max-width:860px){.mark{width:150px}}
+@media (max-width:760px){
+ header .wrap{height:60px;gap:12px}
+ .brand{display:none}
+ nav{flex:1;justify-content:space-between;gap:0;overflow:visible}
+ nav a{font-size:11px;letter-spacing:.08em;padding:16px 0}
+ .tgl{width:38px;height:38px}
+ html{scroll-padding-top:calc(68px + env(safe-area-inset-top,0px))}
+}
+@media (max-width:640px){
+ #about .strip{flex-direction:column;gap:6px}
+ .btn{padding:16px 22px}
+ .cta .btn{flex:1 1 100%;text-align:center}
+}
+@media (hover:none){
+ .btn.line:hover{background:none;color:inherit;border-color:var(--rule)}
+ .btn.fill:hover{background:var(--acc)}
+ .row:hover{color:inherit}
+ .row:hover .arr{transform:none;color:var(--mute)}
+ .social-chip:hover{background:none;color:inherit}
+ .tags span:hover{border-color:var(--rule);color:inherit}
+}
 @media (max-width:480px){.mail{white-space:normal;overflow-wrap:anywhere}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
